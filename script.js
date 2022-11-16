@@ -7,12 +7,10 @@ function getData(e) {
         return res.json();
     })
     .then(data => {
-        // console.log(data);
-        //alert(data)
         console.log(data);
     })
     .catch(err => {
-        console.log(err);
+        console.log(err.message);
     })
 
     e.preventDefault();
